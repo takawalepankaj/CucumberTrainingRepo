@@ -19,8 +19,6 @@ public class OneFolderStepDefs {
 	public void setUp() throws InterruptedException {
 		System.out.println("in setup");
 		
-		
-		System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir") + "\\utility\\chromedriver.exe");
 		System.out.println(System.getProperty("user.dir") + "\\utility\\chromedriver.exe");
 		driver = new ChromeDriver();
 		System.out.println("opned browser");
