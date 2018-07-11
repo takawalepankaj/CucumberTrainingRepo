@@ -23,7 +23,7 @@ public class DataTableStepDefs {
 	@Before
 	public void setUp() throws InterruptedException {
 		System.out.println("in setup");
-		System.setProperty("webdriver.chrome.driver","C:\\PankajCucumber\\eclipse\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir") + "\\utility\\chromedriver.exe");
 		driver = new ChromeDriver();
 		System.out.println("opened browser");
 		Thread.sleep(5000);

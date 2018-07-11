@@ -18,7 +18,7 @@ public class CommonStepDefs {
 	@Before
 	public WebDriver getDriver() throws InterruptedException {
 		System.out.println("in setup");
-		System.setProperty("webdriver.chrome.driver","C:\\PankajCucumber\\eclipse\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir") + "\\utility\\chromedriver.exe");
 		if (driver ==  null) {
 		driver = new ChromeDriver();
 		
