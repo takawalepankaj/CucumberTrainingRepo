@@ -11,9 +11,9 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
-public class SDStepDefs1  extends CommonStepDefs {
+public class SDStepDefs1   {
 	
-	protected WebDriver driver;
+	WebDriver driver;
 	
 	public SDStepDefs1(CommonStepDefs comm) throws InterruptedException {
 		driver = comm.getDriver();
